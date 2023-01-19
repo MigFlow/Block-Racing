@@ -13,8 +13,14 @@ public class PlayerCollision : MonoBehaviour
         // check if the object we collide with has a tag "Obstacle"
         if (collisionInfo.collider.tag == "Obstacle")
         {
-            
+            // Damage to Player
             FindObjectOfType<Player>().TakeDamage(1);
+
+            // Restore Player Orientation after Collison 
+            FindObjectOfType<Player>().ResetSpwanOrientation();
+            //Invoke("FindObjectOfType<Player>().ResetSpwanOrientation()", 1f);
+
+            // When Player Health = 0 --> End Game 
             if(FindObjectOfType<Player>().currentHealth <0.01f){
 
                 // disable the player movement
