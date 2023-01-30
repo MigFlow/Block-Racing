@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     // reference to the Rigidbody component
     public Rigidbody rb;
 
-    public float forwardForce = 8000f;
+    public float forwardForce = 4000f;
     public float sidewaysForce = 120f;
 
     Vector3 movement;

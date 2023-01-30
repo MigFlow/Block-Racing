@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1503538213617920438}
-  forwardForce: 8000
+  forwardForce: 4000
   sidewaysForce: 120
 --- !u!114 &1503538213617920432
 MonoBehaviour:
@@ -161,4 +161,4 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 0}
   rb: {fileID: 1503538213617920438}
-  FirstTransform: {fileID: 0}
+  FirstTransform: {x: 0, y: 0, z: 0, w: 0}
